@@ -11,8 +11,9 @@
   --transition-base: all 0.2s ease-in-out;
   --transition-fast: all 0.1s ease-in-out;
 
-  --clr-bg-primary: #F9F4EA;
+  --clr-bg-primary: hsl(40, 56%, 95%);
   --clr-bg-secondary: #3a3330;
+  --clr-bg-tertiary: #CFC6B6;
   --clr-bg-neutral: #ffffff;
 
   --clr-text-primary: #3a3330;
@@ -24,7 +25,7 @@
 
 .container {
   margin: 0 auto;
-  width: 1300px;
+  width: 1200px;
 }
 
 @media (max-width: 1200px) {
