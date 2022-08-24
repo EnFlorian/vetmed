@@ -1,26 +1,34 @@
 export const images = [
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    path: "./../assets/images/dog-1.jpg",
     alt: "Dog",
   },
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    alt: "Aerial view of a city",
+    path: "./../assets/images/dog-2.jpg",
+    alt: "Dog",
   },
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    alt: "Aerial view of a city",
+    path: "./../assets/images/dog-3.jpg",
+    alt: "Dog",
   },
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    alt: "Aerial view of a city",
+    path: "./../assets/images/cat-1.jpg",
+    alt: "Cat",
   },
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    alt: "Aerial view of a city",
+    path: "./../assets/images/cat-2.jpg",
+    alt: "Cat",
   },
   {
-    path: "https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    alt: "Aerial view of a city",
+    path: "./../assets/images/cat-3.jpg",
+    alt: "Cat",
+  },
+  {
+    path: "./../assets/images/dog-4.jpg",
+    alt: "Dog",
+  },
+  {
+    path: "./../assets/images/dog-5.jpg",
+    alt: "Dog",
   },
 ];
