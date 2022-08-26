@@ -1,0 +1,23 @@
+.accordion {
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  background-color: red;
+
+  &__header {
+    width: 100%;
+    height: 3rem;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__content {
+    width: 100%;
+    height: 3rem;
+    background-color: green;
+    display: flex;
+  }
+}
