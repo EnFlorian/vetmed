@@ -1,26 +1,26 @@
 export const navigation = [
   {
     name: "Home",
-    url: "/",
+    path: "/",
   },
   {
     name: "About",
-    url: "/about",
+    path: "/about",
   },
   {
     name: "Services",
-    url: "/services",
+    path: "/services",
   },
   {
     name: "Stats",
-    url: "/stats",
+    path: "/stats",
   },
   {
     name: "Benefits",
-    url: "/benefits",
+    path: "/benefits",
   },
   {
     name: "Testimonials",
-    url: "/testimonials",
+    path: "/testimonials",
   },
 ];

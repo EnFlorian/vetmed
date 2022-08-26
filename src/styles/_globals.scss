@@ -22,10 +22,10 @@
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1400px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .container {
     margin: 1rem;
     width: calc(100% - 2rem);
