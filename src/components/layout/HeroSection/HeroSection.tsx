@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 import "./HeroSection.scss";
 import catImage from "../../../assets/images/cat-1.jpg";
-import dogImage from "../../../assets/images/dog-1.jpg";
+import dogImage from "../../../assets/images/dog-6.jpg";
 
 const HeroSection = () => {
   return (
