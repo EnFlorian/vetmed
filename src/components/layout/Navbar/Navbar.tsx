@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BaseButton } from "../../elements";
 import "./Navbar.scss";
 import { navigation } from "../../../data/navbar";
-import pawImage from "../../../assets/paw-print-1.svg";
+import pawImage from "../../../assets/logo-1.svg";
 
 const Navbar = () => {
   const navLinks = navigation.map(({ name, path }, idx) => (
