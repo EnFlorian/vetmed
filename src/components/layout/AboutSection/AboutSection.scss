@@ -1,30 +1,53 @@
 .about-section {
-  padding: 5rem 0;
   display: flex;
   height: 100vh;
-  &__image-wrapper {
+  justify-content: center;
+  align-items: center;
+
+  &__left-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
-  &__content {
+  &__right-content {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    gap: 1rem;
   }
 
   &__title {
     font-size: 2.5rem;
     font-family: var(--font-secondary);
     color: var(--clr-text-primary);
-    margin-bottom: 2rem;
   }
 
   &__description {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: var(--clr-text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+    color: var(--clr-accent-primary);
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-family: var(--font-secondary);
     color: var(--clr-text-secondary);
     margin-bottom: 2rem;
   }
