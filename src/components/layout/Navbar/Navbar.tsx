@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <div className="navbar__wrapper container">
+      <div className="navbar__wrapper container-xl">
         <div className="navbar__logo-wrapper">
           <img src={pawImage} alt="logo" className="navbar__logo" />
           <h1 className="navbar__logo-text"> VETPET </h1>

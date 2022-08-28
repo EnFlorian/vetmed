@@ -1,6 +1,6 @@
 :root {
   --navbar-height: 100px;
-  --footer-height: 3.5rem;
+  --footer-height: 50vh;
 
   --box-shadow-primary: 4px 3px 9px 0px rgb(0 0 0 / 10%);
   --box-shadow-secondary: 12px 9px 38px 0px rgb(0 0 0 / 10%);
@@ -22,13 +22,37 @@
   --clr-accent-primary: #f69946;
 }
 
-.container {
+.container-xl {
   margin: 0 auto;
   width: 1400px;
 }
 
+.container-lg {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.container-md {
+  margin: 0 auto;
+  width: 900px;
+}
+
 @media (max-width: 1400px) {
-  .container {
+  .container-xl {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-lg {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .container-md {
     margin: 1rem;
     width: calc(100% - 2rem);
   }
