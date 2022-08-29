@@ -9,17 +9,25 @@
   --transition-base: all 0.2s ease-in-out;
   --transition-fast: all 0.1s ease-in-out;
 
+  --clr-overlay-primary: hsla(0, 0%, 100%, 0.2);
+
   --clr-bg-primary: #ffffff;
   --clr-bg-secondary: #3a3330;
-  --clr-bg-tertiary: #cfc6b6;
+  --clr-bg-tertiary: #fcf9f5;
+  --clr-bg-quaternary: #564741;
 
   --clr-bg-neutral: #ffffff;
 
-  --clr-text-primary: #3a3330;
+  --clr-text-primary: #564741;
   --clr-text-secondary: #2b2b2b;
   --clr-text-neutral: #ffffff;
 
   --clr-accent-primary: #f69946;
+  --clr-accent-secondary: #f9f4ea;
+}
+
+.app {
+  width: 100wv;
 }
 
 .swiper-button-prev {
@@ -70,7 +78,7 @@
 
 .container-md {
   margin: 0 auto;
-  width: 900px;
+  width: 1000px;
 }
 
 @media (max-width: 1400px) {
@@ -87,7 +95,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .container-md {
     margin: 1rem;
     width: calc(100% - 2rem);
