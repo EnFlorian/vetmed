@@ -1,3 +1,5 @@
+import "../assets/images/dog-1.jpg";
+
 export const officeHours = [
   {
     day: "Mon-Fri",
@@ -13,4 +15,13 @@ export const officeHours = [
   },
 ];
 
-export const gallery = [];
+export const gallery = [
+  "../../../assets/images/cat-1.jpg",
+  "../../../assets/images/cat-2.jpg",
+  "../../../assets/images/cat-3.jpg",
+  "../../../assets/images/dog-1.jpg",
+  "../../../assets/images/dog-2.jpg",
+  "../../../assets/images/dog-3.jpg",
+  "../../../assets/images/dog-4.jpg",
+  "./assets/images/dog-5.jpg",
+];

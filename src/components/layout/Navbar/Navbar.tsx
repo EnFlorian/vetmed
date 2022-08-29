@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BaseButton } from "../../elements";
+import { HighlightButton } from "../../elements";
 import "./Navbar.scss";
 import { navigation } from "../../../data/navbar";
 import pawImage from "../../../assets/logo-1.svg";
@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav>
           <ul className="navbar__links">{navLinks}</ul>
         </nav>
-        <BaseButton title="Contact Us" type="primary" />
+        <HighlightButton title="+43 676 76047132" />
       </div>
     </section>
   );
