@@ -1,0 +1,19 @@
+.image-gallery {
+  &__list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+
+    &:hover,
+    &__image {
+      transform: scale(1.05);
+    }
+  }
+}
