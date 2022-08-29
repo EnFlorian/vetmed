@@ -3,8 +3,8 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./HeroSection.scss";
-import catImage from "../../../assets/images/hero-image-1.jpg";
-import dogImage from "../../../assets/images/hero-image-2.jpg";
+import catImage from "../../../assets/images/section-image-3.jpg";
+import dogImage from "../../../assets/images/hero-image-1.jpg";
 import { BaseBadge, BaseButton } from "../../elements";
 
 const HeroSection = () => {
