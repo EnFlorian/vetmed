@@ -5,7 +5,7 @@ import { Home, NotFound } from "./pages";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

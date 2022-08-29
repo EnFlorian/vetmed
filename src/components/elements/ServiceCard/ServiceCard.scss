@@ -1,0 +1,38 @@
+.service-card {
+  background-color: var(--clr-bg-primary);
+  box-shadow: var(--box-shadow-primary);
+  min-height: 25rem;
+  min-width: 20rem;
+  border-radius: 0.5rem;
+  overflow: none;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: var(--font-secondary);
+    color: var(--clr-text-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
