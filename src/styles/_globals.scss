@@ -1,6 +1,6 @@
 :root {
   --navbar-height: 100px;
-  --footer-height: 50vh;
+  --footer-height: 10rem;
 
   --box-shadow-primary: 4px 3px 9px 0px rgb(0 0 0 / 10%);
   --box-shadow-secondary: 12px 9px 38px 0px rgb(0 0 0 / 10%);
@@ -9,21 +9,23 @@
   --transition-base: all 0.2s ease-in-out;
   --transition-fast: all 0.1s ease-in-out;
 
-  --clr-overlay-primary: hsla(0, 0%, 100%, 0.2);
+  --clr-overlay-primary: hsla(0, 0%, 100%, 0.9);
+  --clr-overlay-secondary: hsla(0, 0%, 100%, 0.1);
 
   --clr-bg-primary: #ffffff;
-  --clr-bg-secondary: #3a3330;
+  --clr-bg-secondary: #564741;
+
   --clr-bg-tertiary: #fcf9f5;
   --clr-bg-quaternary: #564741;
 
   --clr-bg-neutral: #ffffff;
 
   --clr-text-primary: #564741;
-  --clr-text-secondary: #2b2b2b;
+  --clr-text-secondary: #646464;
   --clr-text-neutral: #ffffff;
 
   --clr-accent-primary: #f69946;
-  --clr-accent-secondary: #f9f4ea;
+  --clr-accent-secondary: hsl(39, 56%, 92%);
 }
 
 .app {

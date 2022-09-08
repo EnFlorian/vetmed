@@ -34,6 +34,13 @@
     justify-content: center;
   }
 
+  &__title {
+    font-size: 1.2rem;
+    color: var(--clr-text-primary);
+    font-weight: 500;
+    flex: 1;
+  }
+
   &__content {
     width: 100%;
     background-color: var(--clr-bg-tertiary);
@@ -42,5 +49,6 @@
 
   &__text {
     padding: 1rem;
+    color: var(--clr-text-primary);
   }
 }

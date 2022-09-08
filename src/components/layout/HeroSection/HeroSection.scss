@@ -3,7 +3,7 @@
   padding-top: var(--navbar-height); // display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(90vh);
+  height: 110vh;
   width: 100%;
 
   &__slider {
@@ -33,5 +33,29 @@
     font-family: var(--font-secondary);
     color: var(--clr-text-neutral);
     line-height: 1;
+  }
+
+  &__cards-list {
+    width: 100%;
+    padding: 0 5rem;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    height: auto;
+    &__cards-list {
+      position: relative;
+      top: 1rem;
+    }
   }
 }

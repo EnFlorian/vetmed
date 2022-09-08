@@ -37,6 +37,8 @@
   &__right-content {
     height: 100%;
 
+    background-repeat: no-repeat;
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -61,5 +63,17 @@
   &__gallery {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .benefits-section {
+    flex-direction: column;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   }
 }

@@ -1,0 +1,65 @@
+.testimonial-card {
+  display: flex;
+  justify-content: center;
+  max-width: 40rem;
+  gap: 2.5rem;
+
+  &__left-content {
+    flex: 2;
+  }
+
+  &__right-content {
+    flex: 6;
+  }
+
+  &__name {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    color: var(--clr-text-primary);
+  }
+
+  &__title {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--clr-text-primary);
+    margin-bottom: 1rem;
+  }
+
+  &__rating {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__person-image-wrapper {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  &__pet-image-wrapper {
+    position: absolute;
+    top: -15%;
+    left: 60%;
+    width: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow-primary);
+    border: 4px solid var(--clr-bg-neutral);
+  }
+
+  &__quotes-image-wrapper {
+    position: absolute;
+    top: 15%;
+    left: -25%;
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+}

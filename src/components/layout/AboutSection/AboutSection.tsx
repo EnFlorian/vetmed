@@ -5,7 +5,7 @@ import { BsCheckSquareFill } from "react-icons/bs";
 
 const AboutSection = () => {
   return (
-    <section className="about-section container-lg">
+    <section className="about-section container-lg" id="about">
       <div className="about-section__left-content">
         <div className="about-section__image-wrapper">
           <img src={dogImage} alt="dog" className="about-section__image" />

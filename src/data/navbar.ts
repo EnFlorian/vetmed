@@ -1,26 +1,18 @@
 export const navigation = [
   {
     name: "Home",
-    path: "/",
+    path: "#home",
   },
   {
     name: "About",
-    path: "/about",
+    path: "#about",
   },
   {
     name: "Services",
-    path: "/services",
-  },
-  {
-    name: "Stats",
-    path: "/stats",
+    path: "#services",
   },
   {
     name: "Benefits",
-    path: "/benefits",
-  },
-  {
-    name: "Testimonials",
-    path: "/testimonials",
+    path: "#benefits",
   },
 ];

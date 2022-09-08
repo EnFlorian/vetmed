@@ -7,6 +7,7 @@ import Newsletter from "./Newsletter/Newsletter";
 import ServiceSection from "./ServiceSection/ServiceSection";
 import StatsSection from "./StatsSection/StatsSection";
 import TestimonialSection from "./TestimonialSection/TestimonialSection";
+import MobileMenu from "../elements/MobileMenu/MobileMenu";
 
 export {
   AboutSection,
@@ -18,4 +19,5 @@ export {
   ServiceSection,
   StatsSection,
   TestimonialSection,
+  MobileMenu,
 };

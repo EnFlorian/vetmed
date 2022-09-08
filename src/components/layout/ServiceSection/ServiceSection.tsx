@@ -12,7 +12,7 @@ const ServiceSection = () => {
   });
 
   return (
-    <section className="service-section">
+    <section className="service-section" id="services">
       <div className="service-section__wrapper  container-md">
         <header className="service-section__header">
           <BaseBadge title="Our Services" />

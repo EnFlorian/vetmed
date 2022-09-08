@@ -1,0 +1,14 @@
+.rating-stars {
+  display: flex;
+  user-select: none;
+  max-width: 5rem;
+
+  &__star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+}

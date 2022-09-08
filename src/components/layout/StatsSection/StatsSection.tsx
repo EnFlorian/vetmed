@@ -10,7 +10,7 @@ const StatsSection = () => {
   ));
 
   return (
-    <section className="stats-section">
+    <section className="stats-section" id="stats">
       <div className="stats-section__wrapper container-lg">
         <div className="stats-section__left-content">
           <h1 className="stats-section__title">We' Will Keep Your Pets Healthy And Happy</h1>

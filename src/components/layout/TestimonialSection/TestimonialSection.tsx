@@ -1,10 +1,25 @@
-import { BaseBadge } from "../../elements";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import { testimonials } from "../../../data/testimonial-section";
+import { BaseBadge, TestimonialCard } from "../../elements";
 import "./TestimonialSection.scss";
 
 const TestimonialSection = () => {
+  const testimonialCards = testimonials
+    .map((testimonial, index) => {
+      return (
+        <li key={index}>
+          <TestimonialCard {...testimonial} />
+        </li>
+      );
+    })
+    .slice(0, 2);
+
   return (
-    <section className="testimonial-section">
-      <div className="testimonial-section__wrapper  container-md">
+    <section className="testimonial-section" id="testimonials">
+      <div className="testimonial-section__wrapper  container-lg">
         <header className="testimonial-section__header">
           <BaseBadge title="Our Services" />
           <h1 className="testimonial-section__title">What We can do for You</h1>
@@ -14,7 +29,7 @@ const TestimonialSection = () => {
           </p>
         </header>
         <main className="testimonial-section__main">
-          <TestimonalCard />
+          <ul className="testimonial-section__list">{testimonialCards}</ul>
         </main>
       </div>
     </section>

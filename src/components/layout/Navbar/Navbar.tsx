@@ -1,13 +1,25 @@
-import { Link } from "react-router-dom";
 import { HighlightButton } from "../../elements";
 import "./Navbar.scss";
 import { navigation } from "../../../data/navbar";
 import pawImage from "../../../assets/logo-1.svg";
+import { NavLink } from "react-router-dom";
+import MobileMenu from "../../elements/MobileMenu/MobileMenu";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../state/store";
+import { openMobileMenu } from "../../../state/uiSlice";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
+  const { isMobileMenuOpen } = useSelector((state: RootState) => state.ui);
+
+  const dispatch = useDispatch();
+
   const navLinks = navigation.map(({ name, path }, idx) => (
-    <li key={idx}>
-      <Link to={path}>{name}</Link>
+    <li className="navbar__link" key={idx}>
+      <NavLink className="navbar__link" to={path}>
+        {name}
+      </NavLink>
     </li>
   ));
 
@@ -18,11 +30,17 @@ const Navbar = () => {
           <img src={pawImage} alt="logo" className="navbar__logo" />
           <h1 className="navbar__logo-text"> VETPET </h1>
         </div>
-        <nav>
+        <nav className="navbar__nav">
           <ul className="navbar__links">{navLinks}</ul>
         </nav>
-        <HighlightButton title="+43 676 76047132" />
+        <div className="navbar__button">
+          <HighlightButton title="+43 676 76047132" />
+        </div>
+        <div className="navbar__mobile-menu-button" onClick={() => dispatch(openMobileMenu())}>
+          <GiHamburgerMenu />
+        </div>
       </div>
+      <MobileMenu />
     </section>
   );
 };

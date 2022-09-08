@@ -1,11 +1,13 @@
 .about-section {
   display: flex;
-  height: 100vh;
+  min-height: 130vh;
   justify-content: center;
   align-items: center;
 
   &__left-content {
     flex: 1;
+    background-image: url("./../../../assets/paw-print-3.svg");
+    background-repeat: no-repeat;
   }
 
   &__right-content {
@@ -46,9 +48,19 @@
   }
 
   &__text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: var(--font-secondary);
-    color: var(--clr-text-secondary);
+    color: var(--clr-text-primary);
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-section {
+    flex-direction: column;
+    height: auto;
+    &__left-content {
+      order: 1;
+    }
   }
 }

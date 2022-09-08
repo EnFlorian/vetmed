@@ -16,7 +16,7 @@ const BenefitsSection = () => {
     .reverse();
 
   return (
-    <section className="benefits-section">
+    <section className="benefits-section" id="benefits">
       <div className="benefits-section__wrapper container-md">
         <div className="benefits-section__left-content">
           <BaseBadge title="Our Benefits" />

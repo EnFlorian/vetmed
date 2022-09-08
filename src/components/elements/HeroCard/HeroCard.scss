@@ -1,0 +1,44 @@
+.hero-card {
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--clr-bg-neutral);
+  box-shadow: var(--box-shadow-primary);
+  transition: var(--transition-base);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    background-color: var(--clr-bg-secondary);
+  }
+
+  &:hover &__description,
+  &:hover &__title {
+    color: var(--clr-text-neutral);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 4rem;
+    color: var(--clr-accent-primary);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    color: var(--clr-text-primary);
+    margin-bottom: 1rem;
+    transition: var(--transition-base);
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    color: var(--clr-text-secondary);
+    transition: var(--transition-base);
+  }
+}

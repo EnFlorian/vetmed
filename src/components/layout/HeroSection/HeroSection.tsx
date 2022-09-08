@@ -5,11 +5,21 @@ import "swiper/css/pagination";
 import "./HeroSection.scss";
 import catImage from "../../../assets/images/section-image-3.jpg";
 import dogImage from "../../../assets/images/hero-image-1.jpg";
-import { BaseBadge, BaseButton } from "../../elements";
+
+import { BaseBadge, BaseButton, HeroCard } from "../../elements";
+import { services } from "../../../data/hero-section";
 
 const HeroSection = () => {
+  const serviceCards = services.map((service, index) => {
+    return (
+      <li key={index}>
+        <HeroCard {...service} />
+      </li>
+    );
+  });
+
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="home">
       <Swiper
         spaceBetween={30}
         allowTouchMove={false}
@@ -37,6 +47,7 @@ const HeroSection = () => {
           <BaseButton title="Read More" type="primary" />
         </div>
       </div>
+      <ul className="hero-section__cards-list">{serviceCards}</ul>
     </div>
   );
 };
