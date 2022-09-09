@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  padding-top: var(--navbar-height); // display: flex;
+  padding-top: var(--navbar-height);
   justify-content: center;
   align-items: center;
   height: 110vh;
@@ -28,7 +28,7 @@
   }
 
   &__title {
-    margin: 0.5rem 0 3rem 0;
+    margin: 0.5rem 0 2rem 0;
     font-size: 4rem;
     font-family: var(--font-secondary);
     color: var(--clr-text-neutral);
@@ -37,7 +37,6 @@
 
   &__cards-list {
     width: 100%;
-    padding: 0 5rem;
     position: absolute;
     top: 95%;
     left: 0;
@@ -47,15 +46,71 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    padding: 0 4rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1180px) {
   .hero-section {
     height: auto;
     &__cards-list {
       position: relative;
-      top: 1rem;
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-section {
+    &__cards-list {
+      padding: 0rem 1rem 3rem 1rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-section {
+    &__cards-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    &__content {
+      top: 10%;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-section {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      top: 5%;
+      left: 5%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-section {
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__content {
+      top: 5%;
     }
   }
 }

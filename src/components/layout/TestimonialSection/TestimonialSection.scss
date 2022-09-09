@@ -50,7 +50,13 @@
 
 @media (max-width: 1000px) {
   .testimonial-section {
+    &__title {
+      text-align: center;
+      font-size: 2rem;
+    }
+
     &__list {
+      padding-left: 0.1rem;
       flex-direction: column;
     }
   }
