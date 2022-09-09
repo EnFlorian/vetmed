@@ -56,10 +56,9 @@
     &:hover {
       color: var(--clr-accent-primary);
     }
-
-    &__mobile-menu-button {
-      display: none;
-    }
+  }
+  &__mobile-menu-button {
+    display: none;
   }
 }
 
