@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3rem 0;
 
   &__wrapper {
     position: relative;
@@ -49,5 +50,19 @@
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .service-section {
+    padding: 2rem 0;
+    &__left-content {
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 }

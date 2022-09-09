@@ -1,49 +1,28 @@
 .stats-section {
-  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
   background-image: url("../../../assets/images/hero-image-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 8rem 0;
+  padding: 5rem 0;
 
   &__wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    gap: 2rem;
-  }
-
-  &__left-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  &__title {
-    font-family: var(--font-secondary);
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--clr-text-neutral);
-    margin-bottom: 1rem;
-  }
-
-  &__description {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--clr-text-secondary);
-    margin-bottom: 2rem;
-  }
-
-  &__right-content {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
   &__list {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
