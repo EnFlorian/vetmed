@@ -2,7 +2,7 @@ import { HighlightButton } from "../../elements";
 import "./Navbar.scss";
 import { navigation } from "../../../data/navbar";
 import pawImage from "../../../assets/logo-1.svg";
-import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import MobileMenu from "../../elements/MobileMenu/MobileMenu";
 import { useDispatch } from "react-redux";
 import { openMobileMenu } from "../../../state/uiSlice";
@@ -11,11 +11,18 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const dispatch = useDispatch();
 
-  const navLinks = navigation.map(({ name, path }, idx) => (
+  const navLinks = navigation.map(({ name, path, offset }, idx) => (
     <li className="navbar__link" key={idx}>
-      <NavLink className="navbar__link" to={path}>
+      <ScrollLink
+        className="navbar__link"
+        activeClass="navbar__link--active"
+        smooth={true}
+        spy={true}
+        to={path}
+        offset={offset}
+      >
         {name}
-      </NavLink>
+      </ScrollLink>
     </li>
   ));
 

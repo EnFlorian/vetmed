@@ -1,18 +1,22 @@
 export const navigation = [
   {
     name: "Home",
-    path: "#home",
+    path: "home",
+    offset: 0,
   },
   {
     name: "About",
-    path: "#about",
+    path: "about",
+    offset: 10,
   },
   {
     name: "Services",
-    path: "#services",
+    path: "services",
+    offset: 20,
   },
   {
     name: "Benefits",
-    path: "#benefits",
+    path: "benefits",
+    offset: -50,
   },
 ];

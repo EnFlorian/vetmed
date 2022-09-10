@@ -1,8 +1,9 @@
 .about-section {
   display: flex;
-  min-height: 130vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
+  padding-top: 9rem;
 
   &__left-content {
     flex: 1;

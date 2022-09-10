@@ -54,6 +54,10 @@
     cursor: pointer;
     transition: var(--transition-fast);
 
+    &--active {
+      color: var(--clr-accent-primary);
+    }
+
     &:hover {
       color: var(--clr-accent-primary);
     }
