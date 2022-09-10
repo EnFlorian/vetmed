@@ -46,10 +46,12 @@ yarn run start
 
 | Technology              | Description                            |
 |-------------------------|----------------------------------------|
+| Typescript              |   Programming Language                 |
+| Vite                    |   Build tool as replacement for CRA    |
 | React                   |   For the frontend.                    |
 | SCSS                    |   Styling                              |
-| Zustand.js              |   Global state management              |
-| Email.js                |   Form Submissions                     |
+| Redux                   |   Global state management              |
+
 
 #### Implementation
 
