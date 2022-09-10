@@ -19,6 +19,7 @@
   &__logo-wrapper {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
 
   &__logo {
@@ -74,10 +75,14 @@
 
     &__mobile-menu-button {
       display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2.5rem;
       color: var(--clr-text-primary);
       cursor: pointer;
       transition: var(--transition-fast);
+      margin-right: 0.6rem;
+      margin-top: 0.5rem;
 
       &:hover {
         color: var(--clr-accent-primary);
