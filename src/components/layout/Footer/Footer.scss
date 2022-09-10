@@ -1,34 +1,142 @@
 .footer {
   background-color: var(--clr-bg-secondary);
-  height: var(--footer-height);
+  min-height: var(--footer-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &__wrapper {
     display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    gap: 2rem;
   }
 
   &__left-content {
-    flex: 1;
-    padding: 1.5rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__right-content {
-    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 4rem;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  &__logo {
+    width: 5rem;
+  }
+
+  &__logo-text {
+    font-size: 3rem;
+    font-family: var(--font-secondary);
+    color: var(--clr-text-neutral);
+    font-weight: 700;
+    width: fit-content;
+  }
+
+  &__copyright {
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--clr-text-neutral);
+    width: 100%;
   }
 
   &__office-hours-row {
-    width: 100%;
     display: flex;
     color: var(--clr-text-secondary);
     justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__title {
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--clr-accent-primary);
+    margin-bottom: 0.6rem;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__office-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60%;
+  }
+
+  &__contact-info-item {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-text-neutral);
   }
 
   &__office-hours-day {
     font-size: 1rem;
+    color: var(--clr-text-neutral);
   }
 
   &__office-hours-time {
     font-size: 1rem;
+    color: var(--clr-text-neutral);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left-content {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+    }
+
+    &__right-content {
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__office-hours {
+      order: 1;
+    }
+
+    &__contact {
+      order: 2;
+    }
   }
 }

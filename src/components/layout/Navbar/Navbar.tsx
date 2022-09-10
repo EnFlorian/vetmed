@@ -5,14 +5,10 @@ import pawImage from "../../../assets/logo-1.svg";
 import { NavLink } from "react-router-dom";
 import MobileMenu from "../../elements/MobileMenu/MobileMenu";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import { RootState } from "../../../state/store";
 import { openMobileMenu } from "../../../state/uiSlice";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  const { isMobileMenuOpen } = useSelector((state: RootState) => state.ui);
-
   const dispatch = useDispatch();
 
   const navLinks = navigation.map(({ name, path }, idx) => (
