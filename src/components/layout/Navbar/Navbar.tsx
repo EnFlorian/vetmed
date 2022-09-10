@@ -42,8 +42,8 @@ const Navbar = () => {
         <div className="navbar__mobile-menu-button" onClick={() => dispatch(openMobileMenu())}>
           <GiHamburgerMenu />
         </div>
+        <MobileMenu />
       </div>
-      <MobileMenu />
     </section>
   );
 };
