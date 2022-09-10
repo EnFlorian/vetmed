@@ -13,7 +13,7 @@
 
 ## 👩‍💻 Live Website
 
-### [VetMed (Vercel)] (https://vetmed-gamma.vercel.app/)
+### [VetMed (Vercel)](https://vetmed-gamma.vercel.app/)
 
 
 
