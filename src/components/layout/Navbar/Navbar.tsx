@@ -37,7 +37,9 @@ const Navbar = () => {
           <ul className="navbar__links">{navLinks}</ul>
         </nav>
         <div className="navbar__button">
-          <HighlightButton title="+43 676 76047132" />
+          <HighlightButton title="+43 676 76047132">
+            <a href="tel:blank@blank.com">+43 676 76047132</a>
+          </HighlightButton>
         </div>
         <div className="navbar__mobile-menu-button" onClick={() => dispatch(openMobileMenu())}>
           <GiHamburgerMenu />

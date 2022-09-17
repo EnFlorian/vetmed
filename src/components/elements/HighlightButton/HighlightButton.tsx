@@ -2,7 +2,7 @@ import "./HighlightButton.scss";
 import pawImage from "../../../assets/paw-print-4.svg";
 
 interface IHighlightButtonProps {
-  title: string;
+  title?: string;
   children?: React.ReactNode;
   clickHandler?: () => void;
 }
