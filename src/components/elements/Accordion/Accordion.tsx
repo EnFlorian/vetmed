@@ -24,7 +24,7 @@ const Accordion = ({ title, content }: IAccordionProps) => {
         <motion.div
           initial={{ height: 0 }}
           animate={{ height: isOpen ? "auto" : 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
           exit={{ height: 0 }}
           className="accordion__content"
         >
