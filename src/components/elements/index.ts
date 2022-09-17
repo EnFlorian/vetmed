@@ -4,6 +4,7 @@ import BaseButton from "./BaseButton/BaseButton";
 import HeroCard from "./HeroCard/HeroCard";
 import HighlightButton from "./HighlightButton/HighlightButton";
 import ImageGallery from "./ImageGallery/ImageGallery";
+import NotificationModal from "./NotificationModal/NotificationModal";
 import RatingStars from "./RatingStars/RatingStars";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import StatsCard from "./StatsCard/StatsCard";
@@ -16,6 +17,7 @@ export {
   HeroCard,
   HighlightButton,
   ImageGallery,
+  NotificationModal,
   RatingStars,
   ServiceCard,
   StatsCard,

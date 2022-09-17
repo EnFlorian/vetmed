@@ -1,13 +1,14 @@
 import "./Newsletter.scss";
 import catImage from "../../../assets/images/cat-nobg-1.png";
-import { BaseBadge, BaseButton } from "../../elements";
+import { BaseBadge, BaseButton, NotificationModal } from "../../elements";
 import { useState } from "react";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onSubmit = () => {
-    console.log("submit");
+    setIsModalOpen(true);
   };
 
   return (
@@ -33,6 +34,14 @@ const Newsletter = () => {
           <BaseButton title="Subscribe" clickHandler={onSubmit} type="primary" />
         </div>
       </div>
+      {isModalOpen && (
+        <NotificationModal
+          title="Success"
+          description="You have successfully subscribed to our newsletter"
+          closeModalFunc={setIsModalOpen}
+          isOpen={isModalOpen}
+        />
+      )}
     </section>
   );
 };
