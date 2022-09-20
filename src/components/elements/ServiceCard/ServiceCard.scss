@@ -5,6 +5,11 @@
   min-width: 20rem;
   border-radius: 0.5rem;
   overflow: none;
+  transition: var(--transition-slow);
+
+  &:hover {
+    box-shadow: var(--box-shadow-secondary);
+  }
 
   &__wrapper {
     position: relative;

@@ -3,7 +3,7 @@ import { closeMobileMenu } from "../../../state/uiSlice";
 import HighlightButton from "../HighlightButton/HighlightButton";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { navigation } from "./../../../data/navbar";
-import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./MobileMenu.scss";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../state/store";
@@ -12,9 +12,11 @@ const MobileMenu = () => {
   const { isMobileMenuOpen } = useSelector((state: RootState) => state.ui);
   const dispatch = useDispatch();
 
-  const renderedLinks = navigation.map(({ name, path }, idx) => (
+  const renderedLinks = navigation.map(({ name, path, offset }, idx) => (
     <li className="mobile-menu__link" key={idx}>
-      <NavLink to={path}>{name}</NavLink>
+      <ScrollLink smooth={true} spy={true} to={path} offset={offset}>
+        {name}
+      </ScrollLink>
     </li>
   ));
 

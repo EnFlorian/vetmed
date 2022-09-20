@@ -8,12 +8,11 @@
   &__image-wrapper {
     overflow: hidden;
     border-radius: 0.5rem;
-    cursor: pointer;
-    transition: var(--transition-fast);
+    transition: var(--transition-slow);
 
     &:hover,
     &__image {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
   }
 }

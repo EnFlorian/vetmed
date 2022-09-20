@@ -4,7 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./HeroSection.scss";
 import catImage from "../../../assets/images/section-image-3.jpg";
-import dogImage from "../../../assets/images/hero-image-1.jpg";
+import dogImage1 from "../../../assets/images/hero-image-1.jpg";
+import dogImage2 from "../../../assets/images/hero-image-3.jpg";
 
 import { BaseBadge, BaseButton, HeroCard } from "../../elements";
 import { services } from "../../../data/hero-section";
@@ -34,10 +35,13 @@ const HeroSection = () => {
         className="hero-section__slider"
       >
         <SwiperSlide>
-          <img draggable="false" className="hero-section__image" src={dogImage} alt="dog" />
+          <img draggable="false" className="hero-section__image" src={dogImage2} alt="dog" />
         </SwiperSlide>
         <SwiperSlide>
-          <img draggable="false" className="hero-section__image" src={catImage} alt="dog" />
+          <img draggable="false" className="hero-section__image" src={catImage} alt="cat" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img draggable="false" className="hero-section__image" src={dogImage1} alt="dog" />
         </SwiperSlide>
       </Swiper>
       <div className="hero-section__content">
