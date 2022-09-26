@@ -1,6 +1,5 @@
 import "./NotificationModal.scss";
 import Modal from "react-modal";
-
 import BaseButton from "../BaseButton/BaseButton";
 
 const customStyles = {
