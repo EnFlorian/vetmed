@@ -34,7 +34,6 @@ const NotificationModal = ({ isOpen, title, description, closeModalFunc }: INoti
   const [modalIsOpen, setIsOpen] = useState(isOpen);
 
   const closeModal = () => {
-    // required since modal used portal
     setIsOpen(false);
     setTimeout(() => {
       closeModalFunc(false);
