@@ -1,6 +1,7 @@
 import "./NotificationModal.scss";
 import Modal from "react-modal";
 import BaseButton from "../BaseButton/BaseButton";
+import { useState } from "react";
 
 const customStyles = {
   overlay: {
@@ -30,10 +31,20 @@ interface INotificationModalProps {
 Modal.setAppElement("#root");
 
 const NotificationModal = ({ isOpen, title, description, closeModalFunc }: INotificationModalProps) => {
+  const [modalIsOpen, setIsOpen] = useState(isOpen);
+
+  const closeModal = () => {
+    // required since modal used portal
+    setIsOpen(false);
+    setTimeout(() => {
+      closeModalFunc(false);
+    }, 400);
+  };
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={() => closeModalFunc(false)}
+      closeTimeoutMS={400}
+      isOpen={modalIsOpen}
+      onRequestClose={closeModal}
       style={customStyles}
       contentLabel="Confirm Delete"
     >
@@ -43,7 +54,7 @@ const NotificationModal = ({ isOpen, title, description, closeModalFunc }: INoti
           <p className="notification-modal__description">{description}</p>
         </div>
         <div>
-          <BaseButton title="Close" type="primary" clickHandler={() => closeModalFunc(false)} />
+          <BaseButton title="Close" type="primary" clickHandler={closeModal} />
         </div>
       </section>
     </Modal>
