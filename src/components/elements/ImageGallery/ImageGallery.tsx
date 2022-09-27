@@ -13,7 +13,8 @@ const ImageGallery = ({ images }: IImageGalleryProps) => {
   const renderedImages = images.map((image, index) => {
     return (
       <li key={index} className="image-gallery__image-wrapper">
-        <img src={image.path} alt="image" className="image-gallery__image" />
+        <img src={image.path} alt={image.alt} className="image-gallery__image" />
+        <h1 className="image-gallery__image-description">{image.alt}</h1>
       </li>
     );
   });
