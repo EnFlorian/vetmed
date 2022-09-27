@@ -18,10 +18,12 @@
 
 
 ## 🖼 Offline Demo
-#### Mobile Preview
+### Desktop Preview
+![Vetmed - Animal Clinic](/demo/vetmed-desktop-demo.gif)
 
-#### Mobile Preview
 
+### Mobile Preview
+![Vetmed - Animal Clinic](/demo/vetmed-mobile-demo.gif)
 
 
 
