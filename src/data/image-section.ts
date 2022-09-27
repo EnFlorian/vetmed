@@ -10,11 +10,11 @@ import dog4 from "./../assets/images/dog-4.jpg";
 export const images = [
   {
     path: cat1,
-    alt: "Dog",
+    alt: "Cat",
   },
   {
     path: cat2,
-    alt: "Dog",
+    alt: "Cat",
   },
   {
     path: dog1,
@@ -26,15 +26,15 @@ export const images = [
   },
   {
     path: dog2,
-    alt: "Cat",
+    alt: "Dog",
   },
   {
     path: dog3,
-    alt: "Cat",
+    alt: "Dog",
   },
   {
     path: cat4,
-    alt: "Dog",
+    alt: "Cat",
   },
   {
     path: dog4,
