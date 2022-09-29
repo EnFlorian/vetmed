@@ -17,9 +17,12 @@ const Newsletter = () => {
 
   const onSubmit = () => {
     if (isValidEmail(email)) {
+      setEmail("");
+      setError(false);
       setIsModalOpen(true);
+    } else {
+      setError(true);
     }
-    setError(true);
   };
 
   return (
