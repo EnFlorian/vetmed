@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { isValidEmail } from "../../../utils";
 
 const Newsletter = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("demo@user.com");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [error, setError] = useState(false);
 
