@@ -37,10 +37,10 @@ The installation requires at least **node version 10.4**
 ```Shell
 # run in the root directory of the project
 npm install
-npm run start
+npm run dev
 # run in the root directory of the project
 yarn install
-yarn run start
+yarn run dev
 ```
 
 
