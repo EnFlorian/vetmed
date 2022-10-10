@@ -1,6 +1,6 @@
 # 🐶🐱🐢 VetMed
 
-##### A modern personal website that is implemented with Typescript and React. 
+##### A 1-2 Page online presence for a veterinarian office.
 
 
 
@@ -13,17 +13,17 @@
 
 ## 👩‍💻 Live Website
 
-### [Anja - Personal Website (Vercel)](https://anja-personal-website.vercel.app/)
+### [VetMed (Vercel)](https://vetmed-gamma.vercel.app/)
 
 
 
 ## 🖼 Offline Demo
 ### Desktop Preview
-![Anja - Personal Website](/demo/anja-desktop-demo.gif)
+![Vetmed - Animal Clinic](/demo/vetmed-desktop-demo.gif)
 
 
 ### Mobile Preview
-![Anja - Personal Website](/demo/anja-mobile-demo.gif)
+![Vetmed - Animal Clinic](/demo/vetmed-mobile-demo.gif)
 
 
 
@@ -54,6 +54,4 @@ yarn run dev
 | Vite                    |   Build tool as replacement for CRA    |
 | React                   |   For the frontend.                    |
 | SCSS                    |   Styling                              |
-
-
-
+| Redux                   |   Global state management              |
