@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="navbar__wrapper container-xl">
         <div className="navbar__logo-wrapper">
           <img src={pawImage} alt="logo" className="navbar__logo" />
-          <h1 className="navbar__logo-text"> VETPET </h1>
+          <h1 className="navbar__logo-text"> VETMET </h1>
         </div>
         <nav className="navbar__nav">
           <ul className="navbar__links">{navLinks}</ul>
